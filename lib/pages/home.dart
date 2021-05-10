@@ -143,7 +143,7 @@ class _HomePageState extends State<HomePage> {
                 height: 0,
               ),
             ),
-            checkForAd(),
+            //checkForAd(),
             SizedBox(
               height: 10,
             ),
