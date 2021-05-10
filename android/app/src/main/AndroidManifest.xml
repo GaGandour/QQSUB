@@ -1,11 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.qqsub">
-   <application
-        android:label="qqsub"
+    package="com.gabriel_gandour_dev.qqsub">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:label="QQSUB"
         android:icon="@mipmap/ic_launcher">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6358831879798651~8095626957"/>
+            android:value="ca-app-pub-6358831879798651~6679244136"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

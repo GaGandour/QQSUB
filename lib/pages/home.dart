@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
 
     _ad = BannerAd(
       size: AdSize.banner,
-      adUnitId: AdHelper.bannerAdUnitId,
+      adUnitId: AdHelperInicio.bannerAdUnitId,
       request: AdRequest(),
       listener: AdListener(onAdLoaded: (_) {
         setState(

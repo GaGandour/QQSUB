@@ -31,7 +31,7 @@ class _MenuDeMateriasState extends State<MenuDeMaterias> {
 
     _ad = BannerAd(
       size: AdSize.banner,
-      adUnitId: AdHelper.bannerAdUnitId,
+      adUnitId: AdHelperMenu.bannerAdUnitId,
       request: AdRequest(),
       listener: AdListener(onAdLoaded: (_) {
         setState(
