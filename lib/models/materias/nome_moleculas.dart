@@ -730,7 +730,8 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/Nomes_Moleculas/estireno.png',
       'tem explicacao': true,
-      'explicacao': 'Esse é o estireno, o monômero do poliestireno, que é o polímero usado para fazer copos plásticos e isopor.',
+      'explicacao':
+          'Esse é o estireno, o monômero do poliestireno, que é o polímero usado para fazer copos plásticos e isopor.',
       'respostas': [
         'Antraceno',
         'Estireno',
@@ -744,7 +745,8 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/Nomes_Moleculas/Ibuprofeno.png',
       'tem explicacao': true,
-      'explicacao': 'Sim, o isômero S deste composto é o famoso ibuprofeno vendido nas farmácias sob a alcunha de paracetamol!',
+      'explicacao':
+          'Sim, o isômero S deste composto é o famoso ibuprofeno vendido nas farmácias sob a alcunha de paracetamol!',
       'respostas': [
         'Antraceno',
         'Estireno',
@@ -862,7 +864,7 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/Nomes_Moleculas/bhc.png',
       'tem explicacao': true,
-      'explicacao' : 'O hexaclorobenzeno, ou BHC, é um inceticida.',
+      'explicacao': 'O hexaclorobenzeno, ou BHC, é um inceticida.',
       'respostas': [
         'BHC',
         'MTBE',
@@ -874,9 +876,10 @@ final nomesMoleculas = Materia(
     {
       'pergunta': 'Qual das opções é um nome para esta molécula?',
       'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/bhc.png',
+      'path imagem': 'assets/images/Nomes_Moleculas/mtbe.png',
       'tem explicacao': true,
-      'explicacao' : 'O Metil-TercButil-Éter, ou MTBE, é um anti-detonante utilizado na gasolina.',
+      'explicacao':
+          'O Metil-TercButil-Éter, ou MTBE, é um anti-detonante utilizado na gasolina.',
       'respostas': [
         'BHC',
         'MTBE',
@@ -888,9 +891,9 @@ final nomesMoleculas = Materia(
     {
       'pergunta': 'Qual das opções é um nome para esta molécula?',
       'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/bhc.png',
+      'path imagem': 'assets/images/Nomes_Moleculas/nbs.png',
       'tem explicacao': true,
-      'explicacao' : 'N-Bromo-Succinimida, abreviadamente NBS.',
+      'explicacao': 'N-Bromo-Succinimida, abreviadamente NBS.',
       'respostas': [
         'BHC',
         'MTBE',
@@ -946,7 +949,8 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/PVA.png',
       'tem explicacao': true,
-      'explicacao': 'Esse é o poliacetato de vinila, conhecido também como PVA.',
+      'explicacao':
+          'Esse é o poliacetato de vinila, conhecido também como PVA.',
       'respostas': [
         'PE',
         'PS',
@@ -960,7 +964,8 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/orlon.png',
       'tem explicacao': true,
-      'explicacao': 'Esse é a poliacronitrila (PAN), conhecido também como orlon.',
+      'explicacao':
+          'Esse é a poliacronitrila (PAN), conhecido também como orlon.',
       'respostas': [
         'Orlon',
         'Teflon',
@@ -974,7 +979,8 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/teflon.png',
       'tem explicacao': true,
-      'explicacao': 'Esse é o politetrafluoroetileno (PTFE), conhecido também como teflon.',
+      'explicacao':
+          'Esse é o politetrafluoroetileno (PTFE), conhecido também como teflon.',
       'respostas': [
         'Orlon',
         'Teflon',
@@ -988,7 +994,8 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/PMMA.png',
       'tem explicacao': true,
-      'explicacao': 'Esse é o polimetacrilato de metila (PMMA), conhecido também como acrílico.',
+      'explicacao':
+          'Esse é o polimetacrilato de metila (PMMA), conhecido também como acrílico.',
       'respostas': [
         'Orlon',
         'Teflon',
@@ -1002,7 +1009,8 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/poliisopreno.png',
       'tem explicacao': true,
-      'explicacao': 'Esse é o poliisopreno, usado na fabricação de borracha natural.',
+      'explicacao':
+          'Esse é o poliisopreno, usado na fabricação de borracha natural.',
       'respostas': [
         'Poliisobuteno',
         'Poliestireno',
@@ -1016,7 +1024,8 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/PET.png',
       'tem explicacao': true,
-      'explicacao': 'Esse é o politereftalato de etileno, conhecido também como PET.',
+      'explicacao':
+          'Esse é o politereftalato de etileno, conhecido também como PET.',
       'respostas': [
         'PET',
         'PVA', // NAO FAZER
@@ -1030,7 +1039,8 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/PVC.png',
       'tem explicacao': true,
-      'explicacao': 'Esse é o policloreto de vinila, conhecido também como PVC.',
+      'explicacao':
+          'Esse é o policloreto de vinila, conhecido também como PVC.',
       'respostas': [
         'PET',
         'PVA',
@@ -1047,9 +1057,9 @@ final nomesMoleculas = Materia(
       'explicacao': 'Esse é o polibutadieno, presente em borracha artificial.',
       'respostas': [
         'Poliestireno',
-        'Poliisopropeno', 
+        'Poliisopropeno',
         'Polipropileno',
-        'Polibutadieno', 
+        'Polibutadieno',
       ],
       'correto': 3,
     },
@@ -1061,9 +1071,9 @@ final nomesMoleculas = Materia(
       'explicacao': 'Esse é o nylon 46, uma poliamida.',
       'respostas': [
         'Nylon',
-        'PVC', 
+        'PVC',
         'PE',
-        'PET', 
+        'PET',
       ],
       'correto': 0,
     },
@@ -1072,12 +1082,13 @@ final nomesMoleculas = Materia(
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/Policloropreno.png',
       'tem explicacao': true,
-      'explicacao': 'Esse é o policloropreno ou Neopreno, uma família de borrachas e látex sintéticos.',
+      'explicacao':
+          'Esse é o policloropreno ou Neopreno, uma família de borrachas e látex sintéticos.',
       'respostas': [
         'Poliestireno',
-        'Policloropreno', 
+        'Policloropreno',
         'Polietileno',
-        'Polibutadieno', 
+        'Polibutadieno',
       ],
       'correto': 1,
     },
