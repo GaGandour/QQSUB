@@ -151,21 +151,6 @@ final aplicacoes = Materia(
     },
     {
       'pergunta':
-          'Qual desses compostos é utilizado como aditivo à água de radiadores de veículos?',
-      'tem imagem': false,
-      'tem explicacao': true,
-      'explicacao':
-          'Além de atitivo para água de radiador, o Etilenoglicol, ou Etano-1,2-diol, é um umectante na indústria de alimentos e é utilizado na produção de cosméticos e de polímeros.',
-      'respostas': [
-        'Propan-2-ol',
-        'Etilenoglicol',
-        'NaCl',
-        'MgCl\u2082',
-      ],
-      'correto': 1,
-    },
-    {
-      'pergunta':
           'Líquido viscoso e denso, usado na indústria de alimentos, de cosméticos, de higiene pessoal e de explosivos?',
       'tem imagem': false,
       'tem explicacao': true,
@@ -241,7 +226,7 @@ final aplicacoes = Materia(
       'tem imagem': false,
       'tem explicacao': true,
       'explicacao':
-          'O etanoato de etila é utilizado na produção de maçã. Alguns outros ésteres também podem conferir aromas artificiais.',
+          'O etanoato de etila é utilizado na produção de essência de maçã. Alguns outros ésteres também podem conferir aromas artificiais.',
       'respostas': [
         'Culinária',
         'Limpeza',
@@ -528,8 +513,7 @@ final aplicacoes = Materia(
       'correto': 1,
     },
     {
-      'pergunta':
-          "Usado em pomadas para assaduras e em protetores solares.",
+      'pergunta': "Usado em pomadas para assaduras e em protetores solares.",
       'tem imagem': false,
       'tem explicacao': false,
       'respostas': [
@@ -541,8 +525,7 @@ final aplicacoes = Materia(
       'correto': 2,
     },
     {
-      'pergunta':
-          "Usado como antiácido e como laxante.",
+      'pergunta': "Usado como antiácido e como laxante.",
       'tem imagem': false,
       'tem explicacao': true,
       'explicacao': 'Mg(OH)\u2082 é o que compõe o famoso leite de magnésia!',

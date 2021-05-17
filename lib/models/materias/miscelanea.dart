@@ -124,7 +124,7 @@ final miscelanea = Materia(
     },
     {
       'pergunta':
-          'O que é, o que é? É estável, e tem formato de cubos em pó. É o enxofre...',
+          'O que é, o que é? É estável, e tem formato de cubos ou cristais amarelos. É o enxofre...',
       'tem imagem': false,
       'tem explicacao': false,
       'respostas': [
@@ -163,7 +163,7 @@ final miscelanea = Materia(
     },
     {
       'pergunta':
-          'O que é, o que é? A forma alotrópica mais reativa do fósforo necrosa tecidos do corpo humano e é guardado em água com querosene resfriado. É o fósforo...',
+          'O que é, o que é? A forma alotrópica mais reativa do fósforo, necrosa tecidos do corpo humano e é guardado em água com querosene resfriado. É o fósforo...',
       'tem imagem': false,
       'tem explicacao': false,
       'respostas': [
@@ -279,7 +279,7 @@ final miscelanea = Materia(
       'correto': 1,
     },
     {
-      'pergunta': 'O nome dado ao material CuSO\u2084\u20225H\u2082O?',
+      'pergunta': 'Qual o nome dado ao material CuSO\u2084\u20225H\u2082O?',
       'tem imagem': false,
       'tem explicacao': false,
       'respostas': [
@@ -570,7 +570,7 @@ final miscelanea = Materia(
       'tem imagem': false,
       'tem explicacao': true,
       'explicacao':
-          "Todas as ligações do diamante são covalentes, o que confere bastante estabilidade mecânica e química",
+          "O diamante é uma macromolécula, sem elétrons livres ou deslocalizados, e, assim, não conduz eletricidade.",
       'respostas': [
         'Alta dureza',
         'Alto ponto de fusão',
@@ -604,7 +604,7 @@ final miscelanea = Materia(
       'explicacao':
           "Boro, Fósforo e Silício possuem alótropos que formam cristais covalentes, ou seja, os átomos formam uma macromolécula composta de ligações covalentes.",
       'respostas': ['B', 'P', 'Si', 'F'],
-      'correto': 2,
+      'correto': 3,
     },
     {
       'pergunta':
@@ -625,21 +625,11 @@ final miscelanea = Materia(
       'correto': 2,
     },
     {
-      'pergunta':
-          'Qual das seguintes formas alotrópicas do carbono não conduz eletricidade?',
-      'tem imagem': false,
-      'tem explicacao': true,
-      'explicacao':
-          "O diamante é uma macromolécula, sem elétrons livres ou deslocalizados, e, assim, não conduz eletricidade.",
-      'respostas': ['Grafite', 'Grafeno', 'Diamante', 'Nanotubo de Carbono'],
-      'correto': 2,
-    },
-    {
       'pergunta': 'Qual dos seguintes metais apresenta maior ponto de fusão?',
       'tem imagem': false,
       'tem explicacao': true,
       'explicacao':
-          "Mercúrio é líquido a temperatura ambiente, gálio e césio têm ponto de fusão inferior à temperatura do corpo humano.",
+          "Mercúrio é líquido a temperatura ambiente. O gálio e o césio têm ponto de fusão inferior à temperatura do corpo humano.",
       'respostas': ['Mercúrio', 'Gálio', 'Césio', 'Índio'],
       'correto': 3,
     },
@@ -651,22 +641,17 @@ final miscelanea = Materia(
       'correto': 0,
     },
     {
-      'pergunta':
-          'Qual dos seguintes elementos tem maior densidade?',
+      'pergunta': 'Qual dos seguintes elementos tem maior densidade?',
       'tem imagem': false,
       'tem explicacao': true,
       'explicacao':
           "Os elementos localizados ao centro da tabela periódica, em geral, tem maior densidade.",
-      'respostas': [
-        'Platina',
-        'Ósmio',
-        'Irídio',
-        'Ouro'
-      ],
+      'respostas': ['Platina', 'Ósmio', 'Chumbo', 'Ouro'],
       'correto': 1,
     },
     {
-      'pergunta': 'O seguinte símbolo representa o descarte adequado de que polímero?',
+      'pergunta':
+          'O seguinte símbolo representa o descarte adequado de que polímero?',
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/R1.png',
       'tem explicacao': true,
@@ -680,11 +665,13 @@ final miscelanea = Materia(
       'correto': 2,
     },
     {
-      'pergunta': 'O seguinte símbolo representa o descarte adequado de que polímero?',
+      'pergunta':
+          'O seguinte símbolo representa o descarte adequado de que polímero?',
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/R2.png',
       'tem explicacao': true,
-      'explicacao': 'O símbolo de reciclagem com o número 2 se refere ao PEAD, o polietileno de alta densidade.',
+      'explicacao':
+          'O símbolo de reciclagem com o número 2 se refere ao PEAD, o polietileno de alta densidade.',
       'respostas': [
         'PEAD',
         'PEBD',
@@ -694,7 +681,8 @@ final miscelanea = Materia(
       'correto': 0,
     },
     {
-      'pergunta': 'O seguinte símbolo representa o descarte adequado de que polímero?',
+      'pergunta':
+          'O seguinte símbolo representa o descarte adequado de que polímero?',
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/R3.png',
       'tem explicacao': true,
@@ -708,11 +696,13 @@ final miscelanea = Materia(
       'correto': 3,
     },
     {
-      'pergunta': 'O seguinte símbolo representa o descarte adequado de que polímero?',
+      'pergunta':
+          'O seguinte símbolo representa o descarte adequado de que polímero?',
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/R4.png',
       'tem explicacao': true,
-      'explicacao': 'O símbolo de reciclagem com o número 4 se refere ao PEBD, o polietileno de baixa densidade.',
+      'explicacao':
+          'O símbolo de reciclagem com o número 4 se refere ao PEBD, o polietileno de baixa densidade.',
       'respostas': [
         'PEAD',
         'PEBD',
@@ -722,11 +712,13 @@ final miscelanea = Materia(
       'correto': 1,
     },
     {
-      'pergunta': 'O seguinte símbolo representa o descarte adequado de que polímero?',
+      'pergunta':
+          'O seguinte símbolo representa o descarte adequado de que polímero?',
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/R5.png',
       'tem explicacao': true,
-      'explicacao': 'O símbolo de reciclagem com o número 5 se refere ao PP, o polipropileno.',
+      'explicacao':
+          'O símbolo de reciclagem com o número 5 se refere ao PP, o polipropileno.',
       'respostas': [
         'PET',
         'PP',
@@ -736,11 +728,13 @@ final miscelanea = Materia(
       'correto': 1,
     },
     {
-      'pergunta': 'O seguinte símbolo representa o descarte adequado de que polímero?',
+      'pergunta':
+          'O seguinte símbolo representa o descarte adequado de que polímero?',
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/R6.png',
       'tem explicacao': true,
-      'explicacao': 'O símbolo de reciclagem com o número 6 se refere ao PS, o poliestireno, usado para a produção de isopor.',
+      'explicacao':
+          'O símbolo de reciclagem com o número 6 se refere ao PS, o poliestireno, usado para a produção de isopor.',
       'respostas': [
         'PET',
         'PP',
@@ -750,11 +744,13 @@ final miscelanea = Materia(
       'correto': 2,
     },
     {
-      'pergunta': 'O seguinte símbolo representa o descarte adequado de que polímero?',
+      'pergunta':
+          'O seguinte símbolo representa o descarte adequado de que polímero?',
       'tem imagem': true,
       'path imagem': 'assets/images/polimeros/R7.png',
       'tem explicacao': true,
-      'explicacao': 'O símbolo de reciclagem com o número 7 se refere aos polímeros que não o PET, PEAD, PVC, PEBD, PP e PS.',
+      'explicacao':
+          'O símbolo de reciclagem com o número 7 se refere aos polímeros que não o PET, PEAD, PVC, PEBD, PP e PS.',
       'respostas': [
         'PET',
         'PP',

@@ -8,7 +8,7 @@ final dummySubject = Materia(
       'pergunta': 'Clique 1',
       'tem imagem': false,
       'tem explicacao': true,
-      'explicacao':'explicacao top',
+      'explicacao': 'explicacao top',
       'respostas': ['1', '2', '3', '4'],
       'correto': 0,
     },
