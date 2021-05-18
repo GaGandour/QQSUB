@@ -2,7 +2,7 @@ import '../materia.dart';
 
 final corCompostos1 = Materia(
   'Cores de sólidos \u2160',
-  'assets/images/iconesDeMateria/QuimiquITA_compostos.png',
+  'assets/images/iconesDeMateria/QQSUB_compostos1.png',
   [
     {
       'pergunta': 'Qual a cor do composto Hg\u2082I\u2082?',
@@ -261,7 +261,7 @@ final corCompostos1 = Materia(
 
 final corCompostos2 = Materia(
   'Cores de sólidos \u2161',
-  'assets/images/iconesDeMateria/QuimiquITA_compostos.png',
+  'assets/images/iconesDeMateria/QQSUB_compostos2.png',
   [
     {
       'pergunta': 'Qual a cor do composto Fe\u2082O\u2083?',
@@ -508,7 +508,7 @@ final corCompostos2 = Materia(
 
 final corCompostos3 = Materia(
   'Cores de sólidos \u2162',
-  'assets/images/iconesDeMateria/QuimiquITA_compostos.png',
+  'assets/images/iconesDeMateria/QQSUB_compostos3.png',
   [
     {
       'pergunta': 'Qual a cor do composto AgOCN?',

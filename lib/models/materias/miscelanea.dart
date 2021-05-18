@@ -2,7 +2,7 @@ import '../materia.dart';
 
 final miscelanea1 = Materia(
   'Miscelânea \u2160',
-  'assets/images/iconesDeMateria/QuimiquITA_misc.png',
+  'assets/images/iconesDeMateria/QQSUB_misc1.png',
   [
     {
       'pergunta': 'Quais desses NÃO compõe o rubi?',
@@ -283,7 +283,7 @@ final miscelanea1 = Materia(
 
 final miscelanea2 = Materia(
   'Miscelânea \u2161',
-  'assets/images/iconesDeMateria/QuimiquITA_misc.png',
+  'assets/images/iconesDeMateria/QQSUB_misc2.png',
   [
     {
       'pergunta': 'Qual o nome dado ao material CuSO\u2084\u20225H\u2082O?',
@@ -537,7 +537,7 @@ final miscelanea2 = Materia(
 
 final miscelanea3 = Materia(
   'Miscelânea \u2162',
-  'assets/images/iconesDeMateria/QuimiquITA_misc.png',
+  'assets/images/iconesDeMateria/QQSUB_misc3.png',
   [
     {
       'pergunta':

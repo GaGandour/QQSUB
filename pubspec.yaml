@@ -80,6 +80,18 @@ flutter:
     - assets/images/iconesDeMateria/QuimiquITA_molecula2.png
     - assets/images/iconesDeMateria/QuimiquITA_reacao.png
     - assets/images/iconesDeMateria/QuimiquITA_bg.png
+    - assets/images/iconesDeMateria/QQSUB_aplicacao1.png
+    - assets/images/iconesDeMateria/QQSUB_aplicacao2.png
+    - assets/images/iconesDeMateria/QQSUB_compostos1.png
+    - assets/images/iconesDeMateria/QQSUB_compostos2.png
+    - assets/images/iconesDeMateria/QQSUB_compostos3.png
+    - assets/images/iconesDeMateria/QQSUB_misc1.png
+    - assets/images/iconesDeMateria/QQSUB_misc2.png
+    - assets/images/iconesDeMateria/QQSUB_misc3.png
+    - assets/images/iconesDeMateria/QQSUB_moleculas1.png
+    - assets/images/iconesDeMateria/QQSUB_moleculas2.png
+    - assets/images/iconesDeMateria/QQSUB_moleculas3.png
+    - assets/images/iconesDeMateria/QQSUB_moleculas4.png
 
     - assets/images/Nomes_Moleculas/acetaldeido.png
     - assets/images/Nomes_Moleculas/acetilsalicilico.png

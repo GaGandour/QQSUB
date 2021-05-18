@@ -2,7 +2,7 @@ import '../materia.dart';
 
 final nomesMoleculas1 = Materia(
   'Nomes de moléculas \u2160',
-  'assets/images/iconesDeMateria/QuimiquITA_molecula1.png',
+  'assets/images/iconesDeMateria/QQSUB_moleculas1.png',
   [
     {
       'pergunta': 'Qual o nome desta molécula?',
@@ -271,7 +271,7 @@ final nomesMoleculas1 = Materia(
 );
 final nomesMoleculas2 = Materia(
   'Nomes de moléculas \u2161',
-  'assets/images/iconesDeMateria/QuimiquITA_molecula1.png',
+  'assets/images/iconesDeMateria/QQSUB_moleculas2.png',
   [
     {
       'pergunta': 'Qual o nome desta molécula?',
@@ -542,7 +542,7 @@ final nomesMoleculas2 = Materia(
 
 final nomesMoleculas3 = Materia(
   'Nomes de moléculas \u2162',
-  'assets/images/iconesDeMateria/QuimiquITA_molecula1.png',
+  'assets/images/iconesDeMateria/QQSUB_moleculas3.png',
   [
     {
       'pergunta': 'Qual o nome deste ácido?',
@@ -825,7 +825,7 @@ final nomesMoleculas3 = Materia(
 
 final nomesMoleculas4 = Materia(
   'Nomes de moléculas \u2163',
-  'assets/images/iconesDeMateria/QuimiquITA_molecula1.png',
+  'assets/images/iconesDeMateria/QQSUB_moleculas4.png',
   [
     {
       'pergunta': 'Qual o nome desta molécula?',

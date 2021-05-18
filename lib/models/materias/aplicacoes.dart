@@ -2,7 +2,7 @@ import '../materia.dart';
 
 final aplicacoes1 = Materia(
   'Aplicações de compostos \u2160',
-  'assets/images/iconesDeMateria/QuimiquITA_aplicacao.png',
+  'assets/images/iconesDeMateria/QQSUB_aplicacao1.png',
   [
     {
       'pergunta': 'Qual destes compostos é o gás dos pântanos?',
@@ -282,7 +282,7 @@ final aplicacoes1 = Materia(
 
 final aplicacoes2 = Materia(
   'Aplicações de compostos \u2161',
-  'assets/images/iconesDeMateria/QuimiquITA_aplicacao.png',
+  'assets/images/iconesDeMateria/QQSUB_aplicacao2.png',
   [
     {
       'pergunta':
