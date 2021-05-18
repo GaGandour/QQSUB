@@ -1,4 +1,4 @@
-//import './materias/dummy_materia.dart';
+import './materias/dummy_materia.dart';
 
 import './materias/aplicacoes.dart';
 import './materias/cor_de_compostos.dart';
@@ -9,7 +9,7 @@ import './materias/teste_de_chama.dart';
 import './materias/tudao.dart';
 
 final conteudo = [
-  //dummySubject,
+  dummySubject,
   testeDeChama,
   ionsAquosos,
   aplicacoes,

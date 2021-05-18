@@ -46,9 +46,9 @@ class BotaoResposta extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
               color: submetido
-                  ? (questao['correto'] == index
-                      ? _corCerta
-                      : (selecionadas[index] ? _corErrada : _cor))
+                  ? (selecionadas[index]
+                      ? (questao['correto'] == index ? _corCerta : _corErrada)
+                      : _cor)
                   : _cor,
               border: Border.all(
                 color: Color.fromRGBO(159, 91, 0, 1),

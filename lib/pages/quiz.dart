@@ -26,6 +26,9 @@ class _QuizState extends State<Quiz> {
   var numero = 0;
   var submetido = false;
   bool acertando;
+  var primeiraTentativa = true;
+  var pontuacao = 0;
+
   var selecionadas = [
     false,
     false,
@@ -48,15 +51,19 @@ class _QuizState extends State<Quiz> {
 
   void _proxima() {
     setState(() {
+      if (primeiraTentativa) pontuacao++;
+      primeiraTentativa = true;
       acertando = null;
       submetido = false;
       numero++;
       for (int i = 0; i < 4; i++) selecionadas[i] = false;
     });
+    print(pontuacao);
   }
 
   void _errar() {
     setState(() {
+      primeiraTentativa = false;
       acertando = false;
       submetido = true;
     });
@@ -66,7 +73,7 @@ class _QuizState extends State<Quiz> {
     //widget.embaralhar(widget.materia);
     acertando = null;
     submetido = false;
-    numero = 0;
+    //numero = 0;
     for (int i = 0; i < 4; i++) selecionadas[i] = false;
     widget.resetar(widget.materia.titulo);
   }
@@ -184,7 +191,7 @@ class _QuizState extends State<Quiz> {
                 selecionadas: selecionadas,
               );
             } else {
-              return Gabaritado(widget.materia, widget.voltarAoMenu);
+              return Gabaritado(widget.materia, widget.voltarAoMenu, pontuacao);
             }
           },
         ),

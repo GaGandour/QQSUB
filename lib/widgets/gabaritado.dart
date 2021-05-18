@@ -7,7 +7,8 @@ import '../models/materia.dart';
 class Gabaritado extends StatefulWidget {
   final Materia materia;
   final Function voltarMenu;
-  Gabaritado(this.materia, this.voltarMenu);
+  final int pontuacao;
+  Gabaritado(this.materia, this.voltarMenu, this.pontuacao);
 
   @override
   _GabaritadoState createState() => _GabaritadoState();
@@ -65,8 +66,17 @@ class _GabaritadoState extends State<Gabaritado> {
         child: Column(
           children: [
             Text(
-              'Parabéns! Você acabou de gabaritar as ${widget.materia.listaQuestoes.length} questões da categoria ${widget.materia.titulo}!',
+              'Parabéns! Você acabou de responder às ${widget.materia.listaQuestoes.length} questões da categoria ${widget.materia.titulo}!',
               style: Theme.of(context).textTheme.bodyText1,
+              textAlign: TextAlign.left,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              'Pontuação: ${widget.pontuacao}/${widget.materia.listaQuestoes.length}.',
+              style: Theme.of(context).textTheme.bodyText1,
+              textAlign: TextAlign.center,
             ),
             Expanded(
               child: SizedBox(
