@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './botoes_resposta.dart';
+import './info_card.dart';
 
 class Questao extends StatelessWidget {
   final Map questao;
@@ -30,6 +31,22 @@ class Questao extends StatelessWidget {
     @required this.selecionadas,
   });
 
+  void explicar(BuildContext ctx, explicacao) {
+    showModalBottomSheet(
+      shape: ContinuousRectangleBorder(),
+      backgroundColor: Color.fromRGBO(255, 255, 255, 0),
+      context: ctx,
+      isScrollControlled: true,
+      builder: (context) => Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 3,
+          vertical: 3,
+        ),
+        child: CartaoApresentador(explicacao),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -37,37 +54,56 @@ class Questao extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Expanded(
-            child: ListView(
+            child: Column(
               children: [
                 SizedBox(height: 10),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 15),
-                  child: Text(
-                    questao['pergunta'],
-                    style: Theme.of(context).textTheme.bodyText2,
+                Expanded(
+                  child: ListView(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          questao['pergunta'],
+                          style: Theme.of(context).textTheme.bodyText2,
+                        ),
+                      ),
+                      if (questao['tem imagem'])
+                        Image.asset(
+                          questao['path imagem'],
+                          //width: 50,
+                          cacheWidth:
+                              (MediaQuery.of(context).size.width * 0.8).toInt(),
+                        ),
+                    ],
                   ),
                 ),
-                if (questao['tem imagem'])
-                  Image.asset(
-                    questao['path imagem'],
-                    //width: 50,
-                    cacheWidth:
-                        (MediaQuery.of(context).size.width * 0.8).toInt(),
-                  ),
-                if (submetido && acertando && questao['tem explicacao'])
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Center(child: const Text('Correto!')),
-                  ),
-                if (submetido && !acertando && questao['tem explicacao'])
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Center(child: const Text('Errado!')),
-                  ),
-                if (questao['tem explicacao'] && submetido)
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Text(questao['explicacao']),
+                if (submetido)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      if (acertando)
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Center(child: const Text('Correto!')),
+                        ),
+                      if (!acertando)
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Center(child: const Text('Errado!')),
+                        ),
+                      if (questao['tem explicacao'])
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: GestureDetector(
+                            onTap: () =>
+                                explicar(context, questao['explicacao']),
+                            child: Image.asset(
+                              'assets/images/botoes/QuimiquITA_info2.png',
+                              scale: 1.4,
+                            ),
+                          ),
+                        ),
+                    ],
                   ),
               ],
             ),

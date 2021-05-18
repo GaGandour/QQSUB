@@ -5,6 +5,22 @@ final dummySubject = Materia(
   'assets/images/iconesDeMateria/QuimiquITA_bg.png',
   [
     {
+      'pergunta':
+          'O seguinte símbolo representa o descarte adequado de que polímero?',
+      'tem imagem': true,
+      'path imagem': 'assets/images/polimeros/R7.png',
+      'tem explicacao': true,
+      'explicacao':
+          'O símbolo de reciclagem com o número 7 se refere aos polímeros que não o PET, PEAD, PVC, PEBD, PP e PS.',
+      'respostas': [
+        'PET',
+        'PP',
+        'PS',
+        '\"Outros\"',
+      ],
+      'correto': 3,
+    },
+    {
       'pergunta': 'Clique 1',
       'tem imagem': false,
       'tem explicacao': true,

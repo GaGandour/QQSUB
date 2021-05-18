@@ -2,12 +2,6 @@ import 'package:flutter/material.dart';
 import '../widgets/gabaritado.dart';
 import '../models/materia.dart';
 import '../widgets/questao.dart';
-import '../widgets/info_card.dart';
-
-const String aviso =
-    """    Se este botão está aparecendo, então esta é uma questão explicativa. Isso quer dizer que, ao responder a questão, uma breve explicação será exibida logo abaixo do enunciado.
-
-    Caso a explicação não apareça em sua tela, deslize-a para baixo.""";
 
 class Quiz extends StatefulWidget {
   final Materia materia;
@@ -149,22 +143,6 @@ class _QuizState extends State<Quiz> {
     );
   }
 
-  void _showInfo(BuildContext ctx) {
-    showModalBottomSheet(
-      shape: ContinuousRectangleBorder(),
-      backgroundColor: Color.fromRGBO(255, 255, 255, 0),
-      context: ctx,
-      isScrollControlled: true,
-      builder: (context) => Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 3,
-          vertical: 3,
-        ),
-        child: CartaoApresentador(aviso),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
@@ -172,19 +150,6 @@ class _QuizState extends State<Quiz> {
       elevation: 0, // Mudar para 0 depois
       title: FittedBox(child: Text("${widget.materia.titulo}")),
       actions: [
-        if (numero < widget.materia.listaQuestoes.length)
-          if ((widget.materia.listaQuestoes[widget.ordem[numero]]
-              as Map)['tem explicacao'])
-            Builder(
-              builder: (context) => GestureDetector(
-                onTap: () => _showInfo(context),
-                child: Image.asset(
-                  'assets/images/botoes/QuimiquITA_info2.png',
-                  scale: 0.7,
-                ),
-              ),
-            ),
-        SizedBox(width: 10),
         Builder(
           builder: (context) => GestureDetector(
             onTap: () => _pausar(context),
