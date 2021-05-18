@@ -1,0 +1,6 @@
+OK - Erro na questão a respeito de elementos que formam 
+moléculas covalentes.
+
+- Melhorar UI de scrolling
+- Melhorar UI do botão de próxima questão
+ 
