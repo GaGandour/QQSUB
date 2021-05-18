@@ -1,7 +1,7 @@
 import '../materia.dart';
 
-final aplicacoes = Materia(
-  'Aplicações de compostos',
+final aplicacoes1 = Materia(
+  'Aplicações de compostos \u2160',
   'assets/images/iconesDeMateria/QuimiquITA_aplicacao.png',
   [
     {
@@ -277,6 +277,13 @@ final aplicacoes = Materia(
       ],
       'correto': 0,
     },
+  ],
+);
+
+final aplicacoes2 = Materia(
+  'Aplicações de compostos \u2161',
+  'assets/images/iconesDeMateria/QuimiquITA_aplicacao.png',
+  [
     {
       'pergunta':
           'Qual destes compostos é utilizado para fazer corantes e perfumes?',

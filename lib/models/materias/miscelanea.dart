@@ -1,7 +1,7 @@
 import '../materia.dart';
 
-final miscelanea = Materia(
-  'Miscelânea',
+final miscelanea1 = Materia(
+  'Miscelânea \u2160',
   'assets/images/iconesDeMateria/QuimiquITA_misc.png',
   [
     {
@@ -278,6 +278,13 @@ final miscelanea = Materia(
       ],
       'correto': 1,
     },
+  ],
+);
+
+final miscelanea2 = Materia(
+  'Miscelânea \u2161',
+  'assets/images/iconesDeMateria/QuimiquITA_misc.png',
+  [
     {
       'pergunta': 'Qual o nome dado ao material CuSO\u2084\u20225H\u2082O?',
       'tem imagem': false,
@@ -525,6 +532,13 @@ final miscelanea = Materia(
       'respostas': ['Az - V', 'Az - Am', 'I - V', 'Am - I'],
       'correto': 2,
     },
+  ],
+);
+
+final miscelanea3 = Materia(
+  'Miscelânea \u2162',
+  'assets/images/iconesDeMateria/QuimiquITA_misc.png',
+  [
     {
       'pergunta':
           'Quais as cores do Tornassol, em meio ácido e meio básico, respectivamente?\n\nLegenda:\nAm - Amarelo\nAz - Azul\nV - Vermelho',
