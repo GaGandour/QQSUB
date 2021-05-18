@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+
+import '../adHelper.dart';
 import '../widgets/gabaritado.dart';
 import '../models/materia.dart';
 import '../widgets/questao.dart';
@@ -35,6 +38,48 @@ class _QuizState extends State<Quiz> {
     false,
     false,
   ];
+
+  BannerAd _ad;
+  bool isLoading;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _ad = BannerAd(
+      size: AdSize.banner,
+      adUnitId: AdHelperQuestao.bannerAdUnitId,
+      request: AdRequest(),
+      listener: AdListener(onAdLoaded: (_) {
+        setState(
+          () {
+            isLoading = true;
+          },
+        );
+      }, onAdFailedToLoad: (_, error) {
+        print("Ad Failed to Load with Error: $error");
+      }),
+    );
+
+    _ad.load();
+  }
+
+  Widget checkForAd() {
+    if (isLoading == true) {
+      return Container(
+        child: AdWidget(ad: _ad),
+        width: _ad.size.width.toDouble(),
+        height: _ad.size.height.toDouble(),
+        alignment: Alignment.center,
+      );
+    } else
+      return CircularProgressIndicator();
+  }
+
+  void dispose() {
+    _ad?.dispose();
+    super.dispose();
+  }
 
   void _selecionar(int i) {
     setState(() {
@@ -174,26 +219,38 @@ class _QuizState extends State<Quiz> {
       body: Container(
         width: double.infinity,
         decoration: widget.degrade,
-        child: Builder(
-          builder: (_) {
-            if (numero < widget.materia.listaQuestoes.length) {
-              return Questao(
-                questao: widget.materia.listaQuestoes[widget.ordem[numero]],
-                acertar: _acertar,
-                proxima: _proxima,
-                acertando: acertando,
-                numero: widget.ordem[numero],
-                submetido: submetido,
-                errar: _errar,
-                tentarDeNovo: _tentarDeNovo,
-                menu: () => _pausar(context),
-                selecionar: _selecionar,
-                selecionadas: selecionadas,
-              );
-            } else {
-              return Gabaritado(widget.materia, widget.voltarAoMenu, pontuacao);
-            }
-          },
+        child: Column(
+          children: [
+            Expanded(
+              child: Builder(
+                builder: (_) {
+                  if (numero < widget.materia.listaQuestoes.length) {
+                    return Questao(
+                      questao:
+                          widget.materia.listaQuestoes[widget.ordem[numero]],
+                      acertar: _acertar,
+                      proxima: _proxima,
+                      acertando: acertando,
+                      numero: widget.ordem[numero],
+                      submetido: submetido,
+                      errar: _errar,
+                      tentarDeNovo: _tentarDeNovo,
+                      menu: () => _pausar(context),
+                      selecionar: _selecionar,
+                      selecionadas: selecionadas,
+                    );
+                  } else {
+                    return Gabaritado(
+                        widget.materia, widget.voltarAoMenu, pontuacao);
+                  }
+                },
+              ),
+            ),
+            checkForAd(),
+            SizedBox(
+              height: 15,
+            ),
+          ],
         ),
       ),
     );

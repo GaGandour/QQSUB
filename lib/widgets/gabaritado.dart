@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-import '../adHelper.dart';
 import '../models/materia.dart';
 
 class Gabaritado extends StatefulWidget {
@@ -15,48 +13,6 @@ class Gabaritado extends StatefulWidget {
 }
 
 class _GabaritadoState extends State<Gabaritado> {
-  BannerAd _ad;
-  bool isLoading;
-
-  @override
-  void initState() {
-    super.initState();
-
-    _ad = BannerAd(
-      size: AdSize.banner,
-      adUnitId: AdHelperGabaritado.bannerAdUnitId,
-      request: AdRequest(),
-      listener: AdListener(onAdLoaded: (_) {
-        setState(
-          () {
-            isLoading = true;
-          },
-        );
-      }, onAdFailedToLoad: (_, error) {
-        print("Ad Failed to Load with Error: $error");
-      }),
-    );
-
-    _ad.load();
-  }
-
-  Widget checkForAd() {
-    if (isLoading == true) {
-      return Container(
-        child: AdWidget(ad: _ad),
-        width: _ad.size.width.toDouble(),
-        height: _ad.size.height.toDouble(),
-        alignment: Alignment.center,
-      );
-    } else
-      return CircularProgressIndicator();
-  }
-
-  void dispose() {
-    _ad?.dispose();
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -94,10 +50,6 @@ class _GabaritadoState extends State<Gabaritado> {
                   style: Theme.of(context).textTheme.button,
                 ),
               ),
-            ),
-            checkForAd(),
-            SizedBox(
-              height: 15,
             ),
           ],
         ),
