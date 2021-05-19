@@ -35,3 +35,15 @@ class AdHelperQuestao {
     }
   }
 }
+
+class AdHelperGabaritado {
+  static String get interstitialAdUnitId {
+    if (Platform.isAndroid) {
+      return 'ca-app-pub-3940256099942544/1033173712'; //teste: ca-app-pub-3940256099942544/1033173712
+    } else if (Platform.isIOS) {
+      return 'ca-app-pub-3940256099942544/4411468910'; //teste
+    } else {
+      throw new UnsupportedError('Unsupported platform');
+    }
+  }
+}

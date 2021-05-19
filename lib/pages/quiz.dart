@@ -26,34 +26,37 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-  var numero = 0;
-  var submetido = false;
-  bool acertando;
-  var primeiraTentativa = true;
-  var pontuacao = 0;
+  final _pontuacaoMinima = 0.85;
+  var _numero = 0;
+  var _submetido = false;
+  bool _acertando;
+  var _primeiraTentativa = true;
+  var _pontuacao = 0;
 
-  var selecionadas = [
+  var _selecionadas = [
     false,
     false,
     false,
     false,
   ];
 
-  BannerAd _ad;
-  bool isLoading;
+  BannerAd _myBannerAd;
+  bool _bannerIsLoading;
+
+  InterstitialAd _myInterstitialAd;
 
   @override
   void initState() {
     super.initState();
 
-    _ad = BannerAd(
+    _myBannerAd = BannerAd(
       size: AdSize.banner,
       adUnitId: AdHelperQuestao.bannerAdUnitId,
       request: AdRequest(),
       listener: AdListener(onAdLoaded: (_) {
         setState(
           () {
-            isLoading = true;
+            _bannerIsLoading = true;
           },
         );
       }, onAdFailedToLoad: (_, error) {
@@ -61,15 +64,26 @@ class _QuizState extends State<Quiz> {
       }),
     );
 
-    _ad.load();
+    _myInterstitialAd = InterstitialAd(
+      adUnitId: AdHelperGabaritado.interstitialAdUnitId,
+      listener: AdListener(
+        onAdFailedToLoad: (_, error) {
+          print("Ad Failed to Load with Error: $error");
+        },
+      ),
+      request: AdRequest(),
+    );
+
+    _myBannerAd.load();
+    _myInterstitialAd.load();
   }
 
   Widget checkForAd() {
-    if (isLoading == true) {
+    if (_bannerIsLoading == true) {
       return Container(
-        child: AdWidget(ad: _ad),
-        width: _ad.size.width.toDouble(),
-        height: _ad.size.height.toDouble(),
+        child: AdWidget(ad: _myBannerAd),
+        width: _myBannerAd.size.width.toDouble(),
+        height: _myBannerAd.size.height.toDouble(),
         alignment: Alignment.center,
       );
     } else
@@ -77,49 +91,48 @@ class _QuizState extends State<Quiz> {
   }
 
   void dispose() {
-    _ad?.dispose();
+    _myBannerAd?.dispose();
     super.dispose();
   }
 
   void _selecionar(int i) {
     setState(() {
-      selecionadas[i] = true;
+      _selecionadas[i] = true;
     });
   }
 
   void _acertar() {
     setState(() {
-      acertando = true;
-      submetido = true;
+      _acertando = true;
+      _submetido = true;
     });
   }
 
   void _proxima() {
     setState(() {
-      if (primeiraTentativa) pontuacao++;
-      primeiraTentativa = true;
-      acertando = null;
-      submetido = false;
-      numero++;
-      for (int i = 0; i < 4; i++) selecionadas[i] = false;
+      if (_primeiraTentativa) _pontuacao++;
+      _primeiraTentativa = true;
+      _acertando = null;
+      _submetido = false;
+      _numero++;
+      for (int i = 0; i < 4; i++) _selecionadas[i] = false;
     });
-    print(pontuacao);
   }
 
   void _errar() {
     setState(() {
-      primeiraTentativa = false;
-      acertando = false;
-      submetido = true;
+      _primeiraTentativa = false;
+      _acertando = false;
+      _submetido = true;
     });
   }
 
   void _tentarDeNovo() {
     //widget.embaralhar(widget.materia);
-    acertando = null;
-    submetido = false;
+    _acertando = null;
+    _submetido = false;
     //numero = 0;
-    for (int i = 0; i < 4; i++) selecionadas[i] = false;
+    for (int i = 0; i < 4; i++) _selecionadas[i] = false;
     widget.resetar(widget.materia.titulo);
   }
 
@@ -224,24 +237,26 @@ class _QuizState extends State<Quiz> {
             Expanded(
               child: Builder(
                 builder: (_) {
-                  if (numero < widget.materia.listaQuestoes.length) {
+                  if (_numero < widget.materia.listaQuestoes.length) {
                     return Questao(
                       questao:
-                          widget.materia.listaQuestoes[widget.ordem[numero]],
+                          widget.materia.listaQuestoes[widget.ordem[_numero]],
                       acertar: _acertar,
                       proxima: _proxima,
-                      acertando: acertando,
-                      numero: widget.ordem[numero],
-                      submetido: submetido,
+                      acertando: _acertando,
+                      numero: widget.ordem[_numero],
+                      submetido: _submetido,
                       errar: _errar,
                       tentarDeNovo: _tentarDeNovo,
                       menu: () => _pausar(context),
                       selecionar: _selecionar,
-                      selecionadas: selecionadas,
+                      selecionadas: _selecionadas,
                     );
                   } else {
+                    if (_pontuacao / widget.materia.listaQuestoes.length <
+                        _pontuacaoMinima) _myInterstitialAd.show();
                     return Gabaritado(
-                        widget.materia, widget.voltarAoMenu, pontuacao);
+                        widget.materia, widget.voltarAoMenu, _pontuacao);
                   }
                 },
               ),
