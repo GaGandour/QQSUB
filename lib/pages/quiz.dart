@@ -255,8 +255,8 @@ class _QuizState extends State<Quiz> {
                   } else {
                     if (_pontuacao / widget.materia.listaQuestoes.length <
                         _pontuacaoMinima) _myInterstitialAd.show();
-                    return Gabaritado(
-                        widget.materia, widget.voltarAoMenu, _pontuacao);
+                    return Gabaritado(widget.materia, widget.voltarAoMenu,
+                        _pontuacao, _pontuacaoMinima);
                   }
                 },
               ),
