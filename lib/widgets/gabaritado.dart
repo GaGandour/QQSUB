@@ -34,36 +34,41 @@ class _GabaritadoState extends State<Gabaritado> {
         width: double.infinity,
         padding: EdgeInsets.symmetric(horizontal: 16),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              _textoFinal,
-              style: Theme.of(context).textTheme.bodyText1,
-              textAlign: TextAlign.left,
+            Expanded(
+              child: ListView(
+                children: [
+                  Text(
+                    _textoFinal,
+                    style: Theme.of(context).textTheme.bodyText1,
+                    textAlign: TextAlign.left,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  if (widget.pontuacao / widget.materia.listaQuestoes.length <
+                      widget.notaMinima)
+                    Text(
+                      "Dica: Se você acertar mais do que ${NumberFormat("##.#%", "pt-BR").format(widget.notaMinima)} das questões, essa propaganda irritante de agora há pouco não aparecerá!",
+                      style: Theme.of(context).textTheme.bodyText1,
+                      textAlign: TextAlign.left,
+                    ),
+                  if (widget.pontuacao / widget.materia.listaQuestoes.length <
+                      widget.notaMinima)
+                    SizedBox(
+                      height: 10,
+                    ),
+                  Text(
+                    'Pontuação: ${widget.pontuacao}/${widget.materia.listaQuestoes.length}. (${NumberFormat("##.#%", "pt-BR").format(widget.pontuacao / widget.materia.listaQuestoes.length)})',
+                    style: Theme.of(context).textTheme.bodyText1,
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
             ),
             SizedBox(
               height: 10,
-            ),
-            if (widget.pontuacao / widget.materia.listaQuestoes.length <
-                widget.notaMinima)
-              Text(
-                "Dica: Se você acertar mais do que ${NumberFormat("##.#%", "pt-BR").format(widget.notaMinima)} das questões, essa propaganda irritante de agora há pouco não aparecerá!",
-                style: Theme.of(context).textTheme.bodyText1,
-                textAlign: TextAlign.left,
-              ),
-            if (widget.pontuacao / widget.materia.listaQuestoes.length <
-                widget.notaMinima)
-              SizedBox(
-                height: 10,
-              ),
-            Text(
-              'Pontuação: ${widget.pontuacao}/${widget.materia.listaQuestoes.length}. (${NumberFormat("##.#%", "pt-BR").format(widget.pontuacao / widget.materia.listaQuestoes.length)})',
-              style: Theme.of(context).textTheme.bodyText1,
-              textAlign: TextAlign.center,
-            ),
-            Expanded(
-              child: SizedBox(
-                height: 10,
-              ),
             ),
             Padding(
               padding: const EdgeInsets.only(
