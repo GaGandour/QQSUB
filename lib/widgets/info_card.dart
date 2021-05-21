@@ -9,10 +9,7 @@ class CartaoApresentador extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
-        border: Border.all(
-          color: Colors.black,
-          width: 3
-        ),
+        border: Border.all(color: Colors.black, width: 3),
       ),
       child: Card(
         shape: ContinuousRectangleBorder(),
@@ -32,20 +29,21 @@ class CartaoApresentador extends StatelessWidget {
             ),
             Container(
               height: MediaQuery.of(context).size.height * 0.8,
-              child: ListView(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Text(
-                      texto,
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                      textAlign: TextAlign.justify,
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    texto,
+                    style: TextStyle(
+                      fontSize: 20,
                     ),
+                    textAlign: TextAlign.justify,
                   ),
-                ],
+                ),
               ),
+            ),
+            SizedBox(
+              height: 7,
             ),
           ],
         ),
