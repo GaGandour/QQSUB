@@ -18,11 +18,11 @@ class _GabaritadoState extends State<Gabaritado> {
   String get _textoFinal {
     var nota = widget.pontuacao / widget.materia.listaQuestoes.length;
     if (nota == 1)
-      return "Parabéns! Você acertou de primeira todas as ${widget.materia.listaQuestoes.length} questões da categoria ${widget.materia.titulo}!";
+      return "Parabéns! Você acertou de primeira todas as ${widget.materia.listaQuestoes.length} questões da categoria ${widget.materia.titulo}! Que dedicação, hein?";
     else if (nota > 0.85)
-      return "Muito bom! Você quase gabaritou!\nQuem sabe na próxima?";
+      return "Ótimo! Você quase gabaritou!";
     else if (nota > 0.70)
-      return "Sua nota foi razoável, mas dá para melhorar, hein?";
+      return "Bom trabalho! Topa o desafio de gabaritar?";
     else
       return "Hmmm... Acho que precisamos estudar mais este assunto!";
   }
