@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import '../models/pergunta.dart';
 
 class BotaoResposta extends StatelessWidget {
-  final Map questao;
+  final Pergunta questao;
   final List selecionadas;
 
   final int index;
@@ -37,7 +38,7 @@ class BotaoResposta extends StatelessWidget {
               ? () {}
               : () {
                   selecionar(index);
-                  if (questao['correto'] == index) {
+                  if (questao.correto == index) {
                     acertar();
                   } else {
                     errar();
@@ -47,7 +48,7 @@ class BotaoResposta extends StatelessWidget {
             decoration: BoxDecoration(
               color: submetido
                   ? (selecionadas[index]
-                      ? (questao['correto'] == index ? _corCerta : _corErrada)
+                      ? (questao.correto == index ? _corCerta : _corErrada)
                       : _cor)
                   : _cor,
               border: Border.all(
@@ -64,7 +65,7 @@ class BotaoResposta extends StatelessWidget {
               child: Center(
                 child: FittedBox(
                   child: Text(
-                    questao['respostas'][index],
+                    questao.respostas[index],
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 25,

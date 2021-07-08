@@ -1,261 +1,262 @@
 import '../materia.dart';
+import '../pergunta.dart';
 
 final corCompostos1 = Materia(
   'Cores de sólidos \u2160',
   'assets/images/iconesDeMateria/QQSUB_compostos1.png',
   [
-    {
-      'pergunta': 'Qual a cor do composto Hg\u2082I\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+    Pergunta(
+      pergunta: 'Qual a cor do composto Hg\u2082I\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Rosa',
         'Laranja',
         'Verde',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto AgO?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto AgO?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Preto',
         'Vermelho',
         'Laranja',
         'Marrom',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto AgI?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto AgI?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Amarelo',
         'Rosa',
         'Branco',
         'Vermelho',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto AgBr?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto AgBr?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Rosa',
         'Amarelado',
         'Branco',
         'Vermelho',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto AgCl?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto AgCl?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Rosa',
         'Amarelado',
         'Branco',
         'Vermelho',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Al\u2082O\u2083?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Al\u2082O\u2083?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Amarelo',
         'Rosa',
         'Branco',
         'Vermelho',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Ag\u2082CrO\u2084?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Ag\u2082CrO\u2084?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Verde',
         'Laranja',
         'Amarelo',
         'Vermelho',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto AgCN?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto AgCN?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Amarelo',
         'Violeta',
         'Branco',
         'Verde',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Ag\u2082CO\u2083?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Ag\u2082CO\u2083?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Amarelo',
         'Marrom',
         'Vermelho',
         'Preto',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Ag\u2083PO\u2084?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Ag\u2083PO\u2084?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Laranja',
         'Amarelo',
         'Rosa',
         'Marrom',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto HgI\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto HgI\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Preto',
         'Rosa',
         'Branco',
         'Vermelho',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Cu\u2082O?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Cu\u2082O?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Azul',
         'Verde',
         'Vermelho',
         'Rosa',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto CuO?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto CuO?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Rosa',
         'Preto',
         'Marrom',
         'Amarelo',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto CdS?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto CdS?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Amarelo',
         'Laranja',
         'Branco',
         'Rosa',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto SnS?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto SnS?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Rosa',
         'Laranja',
         'Marrom',
         'Vermelho',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto SnS\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto SnS\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Amarelo',
         'Verde',
         'Azul',
         'Branco',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Hg\u2082Cl\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Hg\u2082Cl\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Amarelo',
         'Verde',
         'Azul',
         'Branco',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto MnS?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto MnS?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Laranja',
         'Violeta',
         'Rosa',
         'Amarelo',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto ZnS?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto ZnS?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Branco',
         'Rosa',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto FeS?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto FeS?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Esverdeado',
         'Rosa',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto FeO?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto FeO?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Esverdeado',
         'Rosa',
       ],
-      'correto': 2,
-    },
+      correto: 2,
+    ),
   ],
 );
 
@@ -263,246 +264,246 @@ final corCompostos2 = Materia(
   'Cores de sólidos \u2161',
   'assets/images/iconesDeMateria/QQSUB_compostos2.png',
   [
-    {
-      'pergunta': 'Qual a cor do composto Fe\u2082O\u2083?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+    Pergunta(
+      pergunta: 'Qual a cor do composto Fe\u2082O\u2083?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Esverdeado',
         'Rosa',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Fe\u2082S\u2083?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Fe\u2082S\u2083?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Branco',
         'Rosa',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto NiS?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto NiS?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Branco',
         'Rosa',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Ag\u2082S?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Ag\u2082S?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Branco',
         'Rosa',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Ag\u2082O?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Ag\u2082O?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Branco',
         'Marrom',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto HgS?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto HgS?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Branco',
         'Rosa',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto MnO\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto MnO\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Branco',
         'Rosa',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto ZnO?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto ZnO?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Preto',
         'Branco',
         'Rosa',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Fe(OH)\u2083?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Fe(OH)\u2083?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Azul',
         'Rosa',
         'Marrom',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto FePO\u2084?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto FePO\u2084?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Violeta',
         'Amarelo',
         'Verde',
         'Rosa',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto SnO?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto SnO?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Violeta',
         'Branco',
         'Verde escuro',
         'Rosa',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto SnO\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto SnO\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Violeta',
         'Branco',
         'Verde escuro',
         'Rosa',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Cr(OH)\u2083?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Cr(OH)\u2083?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Verde',
         'Amarelo',
         'Violeta',
         'Preto',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto CrPO\u2084?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto CrPO\u2084?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Rosa',
         'Verde',
         'Preto',
         'Violeta',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto CrPO\u2084\u00B76H\u2082O?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto CrPO\u2084\u00B76H\u2082O?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Violeta',
         'Marrom',
         'Laranja',
         'Azul',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto BaCrO\u2084?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto BaCrO\u2084?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Laranja',
         'Verde',
         'Azul',
         'Amarelo',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Co(OH)\u2083?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Co(OH)\u2083?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Marrom',
         'Verde',
         'Vermelho',
         'Branco',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Ni(OH)\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Ni(OH)\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Azul',
         'Preto',
         'Verde',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto NiO?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto NiO?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Azul',
         'Preto',
         'Verde',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Zn\u2083(PO\u2084)\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Zn\u2083(PO\u2084)\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Azul',
         'Vermelho',
         'Branco',
         'Violeta',
       ],
-      'correto': 2,
-    },
+      correto: 2,
+    ),
   ],
 );
 
@@ -510,245 +511,245 @@ final corCompostos3 = Materia(
   'Cores de sólidos \u2162',
   'assets/images/iconesDeMateria/QQSUB_compostos3.png',
   [
-    {
-      'pergunta': 'Qual a cor do composto AgOCN?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+    Pergunta(
+      pergunta: 'Qual a cor do composto AgOCN?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Marrom',
         'Amarelo',
         'Branco',
         'Laranja',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Cu(SCN)\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Cu(SCN)\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Azul',
         'Branco',
         'Preto',
         'Verde',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto PbI\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto PbI\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Laranja',
         'Branco',
         'Amarelo',
         'Azul',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto PbBr\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto PbBr\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Laranja',
         'Branco',
         'Amarelo',
         'Azul',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto PbCO\u2083?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto PbCO\u2083?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Laranja',
         'Branco',
         'Amarelo',
         'Azul',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto CuI?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto CuI?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Violeta',
         'Verde',
         'Branco',
         'Marrom',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto KMnO\u2084?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto KMnO\u2084?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Violeta',
         'Verde',
         'Branco',
         'Marrom',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto NO\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto NO\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Verde',
         'Amarelo',
         'Azul',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do Cl\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do Cl\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Rosa',
         'Vermelho',
         'Verde',
         'Preto',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do I\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do I\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Azul',
         'Violeta',
         'Marrom',
         'Rosa',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do Br\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do Br\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Violeta',
         'Azul',
         'Laranja',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto CoCl\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto CoCl\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Azul',
         'Violeta',
         'Preto',
         'Verde',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto Cu\u2082S?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto Cu\u2082S?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Azul',
         'Violeta',
         'Preto',
         'Verde',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto CuS?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto CuS?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Azul',
         'Violeta',
         'Preto',
         'Verde',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto PbS?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto PbS?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Azul',
         'Violeta',
         'Preto',
         'Verde',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto CoCl\u2082\u00B76H\u2082O?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto CoCl\u2082\u00B76H\u2082O?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Amarelo',
         'Vermelho',
         'Branco',
         'Rosa',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual a cor do composto NiCl\u2082\u00B76H\u2082O?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto NiCl\u2082\u00B76H\u2082O?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Verde',
         'Rosa',
         'Branco',
         'Amarelo',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual a cor do composto MnCl\u2082\u00B74H\u2082O?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto MnCl\u2082\u00B74H\u2082O?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Vermelho',
         'Rosa',
         'Violeta',
         'Marrom',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual a cor do composto CuCl\u2082\u00B72H\u2082O?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto CuCl\u2082\u00B72H\u2082O?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Preto',
         'Amarelo',
         'Verde',
         'Rosa',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual a cor do composto F\u2082?',
-      'tem imagem': false,
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual a cor do composto F\u2082?',
+      temImagem: false,
+      temExplicacao: false,
+      respostas: [
         'Branco',
         'Marrom',
         'Verde',
         'Amarelo',
       ],
-      'correto': 3,
-    },
+      correto: 3,
+    ),
   ],
 );

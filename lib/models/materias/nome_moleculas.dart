@@ -1,542 +1,543 @@
 import '../materia.dart';
+import '../pergunta.dart';
 
 final nomesMoleculas1 = Materia(
   'Nomes de moléculas \u2160',
   'assets/images/iconesDeMateria/QQSUB_moleculas1.png',
   [
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/pireno.png',
-      'tem explicacao': false,
-      'respostas': [
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/pireno.png',
+      temExplicacao: false,
+      respostas: [
         'Pireno',
         'Benzopireno',
         'Naftaceno',
         'Naftaleno',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/benzopireno.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/benzopireno.png',
+      temExplicacao: false,
+      respostas: [
         'Pireno',
         'Benzopireno',
         'Naftaceno',
         'Naftaleno',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/naftaceno.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/naftaceno.png',
+      temExplicacao: false,
+      respostas: [
         'Pireno',
         'Benzopireno',
         'Naftaceno',
         'Naftaleno',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/naftaleno.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/naftaleno.png',
+      temExplicacao: false,
+      respostas: [
         'Pireno',
         'Benzopireno',
         'Naftaceno',
         'Naftaleno',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/pirrol.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/pirrol.png',
+      temExplicacao: false,
+      respostas: [
         'Pirrol',
         'Piridina',
         'Furano',
         'Imidazol',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/piridina.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/piridina.png',
+      temExplicacao: false,
+      respostas: [
         'Pirrol',
         'Piridina',
         'Furano',
         'Imidazol',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/furano.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/furano.png',
+      temExplicacao: false,
+      respostas: [
         'Pirrol',
         'Piridina',
         'Furano',
         'Imidazol',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/imidazol.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/imidazol.png',
+      temExplicacao: false,
+      respostas: [
         'Pirrol',
         'Piridina',
         'Furano',
         'Imidazol',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/tolueno.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/tolueno.png',
+      temExplicacao: false,
+      respostas: [
         'Tolueno',
         'Xileno',
         'Cumeno',
         'Cimeno',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/xileno.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/xileno.png',
+      temExplicacao: true,
+      explicacao:
           'Mais precisamente, este é o o-xileno, ou orto-xileno, já que também existem suas versões meta e para.',
-      'respostas': [
+      respostas: [
         'Tolueno',
         'Xileno',
         'Cumeno',
         'Cimeno',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/cumeno.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/cumeno.png',
+      temExplicacao: false,
+      respostas: [
         'Tolueno',
         'Xileno',
         'Cumeno',
         'Cimeno',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/cimeno.png',
-      'tem explicacao': true,
-      'explicacao': 'Mais precisamente, este é o p-cimeno, ou para-cimeno.',
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/cimeno.png',
+      temExplicacao: true,
+      explicacao: 'Mais precisamente, este é o p-cimeno, ou para-cimeno.',
+      respostas: [
         'Tolueno',
         'Xileno',
         'Cumeno',
         'Cimeno',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/benzeno.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/benzeno.png',
+      temExplicacao: false,
+      respostas: [
         'Benzeno',
         'Coroneno',
         'Fenantreno',
         'Pentaceno',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/coroneno.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/coroneno.png',
+      temExplicacao: false,
+      respostas: [
         'Benzeno',
         'Coroneno',
         'Fenantreno',
         'Pentaceno',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/fenantreno.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/fenantreno.png',
+      temExplicacao: false,
+      respostas: [
         'Benzeno',
         'Coroneno',
         'Fenantreno',
         'Pentaceno',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/pentaceno.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/pentaceno.png',
+      temExplicacao: false,
+      respostas: [
         'Benzeno',
         'Coroneno',
         'Fenantreno',
         'Pentaceno',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/glicerol.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/glicerol.png',
+      temExplicacao: false,
+      respostas: [
         'Glicerol',
         'Nitroglicerina',
         'Veratrol',
         'Guaiacol',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/nitroglicerina.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/nitroglicerina.png',
+      temExplicacao: false,
+      respostas: [
         'Glicerol',
         'Nitroglicerina',
         'Veratrol',
         'Guaiacol',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/veratrol.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/veratrol.png',
+      temExplicacao: false,
+      respostas: [
         'Glicerol',
         'Nitroglicerina',
         'Veratrol',
         'Guaiacol',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/guaiacol.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/guaiacol.png',
+      temExplicacao: false,
+      respostas: [
         'Glicerol',
         'Nitroglicerina',
         'Veratrol',
         'Guaiacol',
       ],
-      'correto': 3,
-    },
+      correto: 3,
+    ),
   ],
 );
 final nomesMoleculas2 = Materia(
   'Nomes de moléculas \u2161',
   'assets/images/iconesDeMateria/QQSUB_moleculas2.png',
   [
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/pirocatecol.png',
-      'tem explicacao': true,
-      'explicação':
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/pirocatecol.png',
+      temExplicacao: true,
+      explicacao:
           'Esse é o pirocatecol, também chamado simplesmente de catecol. É um sólido à temperatura ambiente.',
-      'respostas': [
+      respostas: [
         'Pirocatecol',
         'Hidroquinona',
         'Quinona',
         'Resorcinol',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/hidroquinona.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/hidroquinona.png',
+      temExplicacao: false,
+      respostas: [
         'Pirocatecol',
         'Hidroquinona',
         'Quinona',
         'Resorcinol',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/quinona.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/quinona.png',
+      temExplicacao: false,
+      respostas: [
         'Pirocatecol',
         'Hidroquinona',
         'Quinona',
         'Resorcinol',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/resorcinol.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/resorcinol.png',
+      temExplicacao: false,
+      respostas: [
         'Pirocatecol',
         'Hidroquinona',
         'Quinona',
         'Resorcinol',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/cresol.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/cresol.png',
+      temExplicacao: true,
+      explicacao:
           'Mais precisamente, este é o o-cresol, já que existem seus isômeros meta e para. A mistura de cresois forma a creolina, que é um antibactericida e desinfetante.',
-      'respostas': [
+      respostas: [
         'Cresol',
         'Anisol',
         'Catecol',
         'Valerol',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/anisol.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/anisol.png',
+      temExplicacao: false,
+      respostas: [
         'Cresol',
         'Anisol',
         'Catecol',
         'Valerol',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/acetaldeido.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/acetaldeido.png',
+      temExplicacao: false,
+      respostas: [
         'Acetaldeído',
         'Cinamaldeido',
         'Butiraldeído',
         'Valeraldeído',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/cinamaldeido.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/cinamaldeido.png',
+      temExplicacao: false,
+      respostas: [
         'Acetaldeído',
         'Cinamaldeido',
         'Butiraldeído',
         'Valeraldeído',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/butiraldeido.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/butiraldeido.png',
+      temExplicacao: false,
+      respostas: [
         'Acetaldeído',
         'Cinamaldeido',
         'Butiraldeído',
         'Valeraldeído',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/valeraldeido.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/valeraldeido.png',
+      temExplicacao: false,
+      respostas: [
         'Acetaldeído',
         'Cinamaldeido',
         'Butiraldeído',
         'Valeraldeído',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/glutarico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/glutarico.png',
+      temExplicacao: false,
+      respostas: [
         'Glutárico',
         'Malônico',
         'Oxálico',
         'Succínico',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/malonico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/malonico.png',
+      temExplicacao: false,
+      respostas: [
         'Glutárico',
         'Malônico',
         'Oxálico',
         'Succínico',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/oxalico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/oxalico.png',
+      temExplicacao: false,
+      respostas: [
         'Glutárico',
         'Malônico',
         'Oxálico',
         'Succínico',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/succinico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/succinico.png',
+      temExplicacao: false,
+      respostas: [
         'Glutárico',
         'Malônico',
         'Oxálico',
         'Succínico',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/adipico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/adipico.png',
+      temExplicacao: false,
+      respostas: [
         'Adípico',
         'o-ftálico',
         'Pimélico',
         'Tereftálico',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/oftalico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/oftalico.png',
+      temExplicacao: false,
+      respostas: [
         'Adípico',
         'o-ftálico',
         'Pimélico',
         'Tereftálico',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/pimelico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/pimelico.png',
+      temExplicacao: false,
+      respostas: [
         'Adípico',
         'o-ftálico',
         'Pimélico',
         'Tereftálico',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/tereftalico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/tereftalico.png',
+      temExplicacao: false,
+      respostas: [
         'Adípico',
         'o-ftálico',
         'Pimélico',
         'Tereftálico',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/fumarico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/fumarico.png',
+      temExplicacao: false,
+      respostas: [
         'Fumárico',
         'Maleico',
         'Málico',
         'Malônico',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/maleico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/maleico.png',
+      temExplicacao: false,
+      respostas: [
         'Fumárico',
         'Maleico',
         'Málico',
         'Malônico',
       ],
-      'correto': 1,
-    },
+      correto: 1,
+    ),
   ],
 );
 
@@ -544,282 +545,282 @@ final nomesMoleculas3 = Materia(
   'Nomes de moléculas \u2162',
   'assets/images/iconesDeMateria/QQSUB_moleculas3.png',
   [
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/malico.png',
-      'tem explicacao': false,
-      'respostas': [
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/malico.png',
+      temExplicacao: false,
+      respostas: [
         'Fumárico',
         'Maleico',
         'Málico',
         'Malônico',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/acetilsalicilico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/acetilsalicilico.png',
+      temExplicacao: false,
+      respostas: [
         'Acetil Salicílico',
         'Acrílico',
         'Aspártico',
         'Salicílico',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/acrilico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/acrilico.png',
+      temExplicacao: false,
+      respostas: [
         'Acetil Salicílico',
         'Acrílico',
         'Aspártico',
         'Salicílico',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/aspartico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/aspartico.png',
+      temExplicacao: false,
+      respostas: [
         'Acetil Salicílico',
         'Acrílico',
         'Aspártico',
         'Salicílico',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/salicilico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/salicilico.png',
+      temExplicacao: false,
+      respostas: [
         'Acetil Salicílico',
         'Acrílico',
         'Aspártico',
         'Salicílico',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual é esta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/Anilina.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/Anilina.png',
+      temExplicacao: true,
+      explicacao:
           'Essa é a anilina, utilizada na indústria de corantes e na de perfumes.',
-      'respostas': [
+      respostas: [
         'Anilina',
         'Hidrazina',
         'TNT',
         'Toluidina',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual é esta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/hidrazina.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/hidrazina.png',
+      temExplicacao: true,
+      explicacao:
           'Essa é a hidrazina, utilizada em combustíveis para foguetes.',
-      'respostas': [
+      respostas: [
         'Anilina',
         'Hidrazina',
         'TNT',
         'Toluidina',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual é esta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/Trinitrotolueno.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/Trinitrotolueno.png',
+      temExplicacao: true,
+      explicacao:
           'O trinitrotolueno é o famoso TNT dos desenhos animados: um explosivo potente.',
-      'respostas': [
+      respostas: [
         'Anilina',
         'Hidrazina',
         'TNT',
         'Toluidina',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual é esta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/o-toluidina.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/o-toluidina.png',
+      temExplicacao: true,
+      explicacao:
           'Mais precisamente, essa é a o-toluidina, já que existem também os isômeros meta e para.',
-      'respostas': [
+      respostas: [
         'Anilina',
         'Hidrazina',
         'TNT',
         'Toluidina',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/alanina.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/alanina.png',
+      temExplicacao: false,
+      respostas: [
         'Alanina',
         'Amidina',
         'Cadaverina',
         'Putrescina',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/amidina.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/amidina.png',
+      temExplicacao: false,
+      respostas: [
         'Alanina',
         'Amidina',
         'Cadaverina',
         'Putrescina',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/cadaverina.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/cadaverina.png',
+      temExplicacao: true,
+      explicacao:
           'A cadaverina e a putrescina são muito parecidas. A única diferença entre as duas é que a cadaverina tem um CH\u2082 a mais que a putrescina. Como se lembrar qual é qual? A dica é: o número de carbonos dessas duas moléculas é o número de sílabas dos seus nomes. Como essa molécula tem 5 carbonos, ela é a ca-da-ve-ri-na.',
-      'respostas': [
+      respostas: [
         'Alanina',
         'Amidina',
         'Cadaverina',
         'Putrescina',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/putrescina.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/putrescina.png',
+      temExplicacao: true,
+      explicacao:
           'A cadaverina e a putrescina são muito parecidas. A única diferença entre as duas é que a cadaverina tem um CH\u2082 a mais que a putrescina. Como se lembrar qual é qual? A dica é: o número de carbonos dessas duas moléculas é o número de sílabas dos seus nomes. Como essa molécula tem 4 carbonos, ela é a pu-tres-ci-na.',
-      'respostas': [
+      respostas: [
         'Alanina',
         'Amidina',
         'Cadaverina',
         'Putrescina',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/antraceno.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/antraceno.png',
+      temExplicacao: false,
+      respostas: [
         'Antraceno',
         'Estireno',
         'Ibuprofeno',
         'Ureia',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/estireno.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/estireno.png',
+      temExplicacao: true,
+      explicacao:
           'Esse é o estireno, o monômero do poliestireno, que é o polímero usado para fazer copos plásticos e isopor.',
-      'respostas': [
+      respostas: [
         'Antraceno',
         'Estireno',
         'Ibuprofeno',
         'Ureia',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/Ibuprofeno.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/Ibuprofeno.png',
+      temExplicacao: true,
+      explicacao:
           'Sim, o isômero S deste composto é o famoso ibuprofeno vendido nas farmácias sob a alcunha de paracetamol!',
-      'respostas': [
+      respostas: [
         'Antraceno',
         'Estireno',
         'Ibuprofeno',
         'Ureia',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/ureia.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/ureia.png',
+      temExplicacao: false,
+      respostas: [
         'Antraceno',
         'Estireno',
         'Ibuprofeno',
         'Ureia',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/antranilico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/antranilico.png',
+      temExplicacao: false,
+      respostas: [
         'Antranílico',
         'Aspártico',
         'Lático',
         'Pícrico',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/latico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/latico.png',
+      temExplicacao: false,
+      respostas: [
         'Antranílico',
         'Aspártico',
         'Lático',
         'Pícrico',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome deste ácido?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/picrico.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome deste ácido?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/picrico.png',
+      temExplicacao: false,
+      respostas: [
         'Antranílico',
         'Aspártico',
         'Lático',
         'Pícrico',
       ],
-      'correto': 3,
-    },
+      correto: 3,
+    ),
   ],
 );
 
@@ -827,290 +828,288 @@ final nomesMoleculas4 = Materia(
   'Nomes de moléculas \u2163',
   'assets/images/iconesDeMateria/QQSUB_moleculas4.png',
   [
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/glicina.png',
-      'tem explicacao': false,
-      'respostas': [
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/glicina.png',
+      temExplicacao: false,
+      respostas: [
         'Glicina',
         'Guanidina',
         'Salicilamida',
         'Vanilina',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/guanidina.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/guanidina.png',
+      temExplicacao: false,
+      respostas: [
         'Glicina',
         'Guanidina',
         'Salicilamida',
         'Vanilina',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/salicilamida.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/salicilamida.png',
+      temExplicacao: false,
+      respostas: [
         'Glicina',
         'Guanidina',
         'Salicilamida',
         'Vanilina',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual o nome desta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/vanilina.png',
-      'tem explicacao': false,
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual o nome desta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/vanilina.png',
+      temExplicacao: false,
+      respostas: [
         'Glicina',
         'Guanidina',
         'Salicilamida',
         'Vanilina',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual das opções é um nome para esta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/bhc.png',
-      'tem explicacao': true,
-      'explicacao': 'O hexaclorobenzeno, ou BHC, é um inceticida.',
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual das opções é um nome para esta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/bhc.png',
+      temExplicacao: true,
+      explicacao: 'O hexaclorobenzeno, ou BHC, é um inceticida.',
+      respostas: [
         'BHC',
         'MTBE',
         'NBS',
         'TNT',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual das opções é um nome para esta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/mtbe.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual das opções é um nome para esta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/mtbe.png',
+      temExplicacao: true,
+      explicacao:
           'O Metil-TercButil-Éter, ou MTBE, é um anti-detonante utilizado na gasolina.',
-      'respostas': [
+      respostas: [
         'BHC',
         'MTBE',
         'NBS',
         'TNT',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual das opções é um nome para esta molécula?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/Nomes_Moleculas/nbs.png',
-      'tem explicacao': true,
-      'explicacao': 'N-Bromo-Succinimida, abreviadamente NBS.',
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual das opções é um nome para esta molécula?',
+      temImagem: true,
+      pathImagem: 'assets/images/Nomes_Moleculas/nbs.png',
+      temExplicacao: true,
+      explicacao: 'N-Bromo-Succinimida, abreviadamente NBS.',
+      respostas: [
         'BHC',
         'MTBE',
         'NBS',
         'TNT',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/PE.png',
-      'tem explicacao': true,
-      'explicacao': 'Esse é o polietileno, conhecido também como PE.',
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/PE.png',
+      temExplicacao: true,
+      explicacao: 'Esse é o polietileno, conhecido também como PE.',
+      respostas: [
         'PE',
         'PS',
         'PP',
         'PVA',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/PS.png',
-      'tem explicacao': true,
-      'explicacao': 'Esse é o poliestireno, conhecido também como PS.',
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/PS.png',
+      temExplicacao: true,
+      explicacao: 'Esse é o poliestireno, conhecido também como PS.',
+      respostas: [
         'PE',
         'PS',
         'PP',
         'PVA',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/PP.png',
-      'tem explicacao': true,
-      'explicacao': 'Esse é o polipropileno, conhecido também como PP.',
-      'respostas': [
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/PP.png',
+      temExplicacao: true,
+      explicacao: 'Esse é o polipropileno, conhecido também como PP.',
+      respostas: [
         'PE',
         'PS',
         'PP',
         'PVA',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/PVA.png',
-      'tem explicacao': true,
-      'explicacao':
-          'Esse é o poliacetato de vinila, conhecido também como PVA.',
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/PVA.png',
+      temExplicacao: true,
+      explicacao: 'Esse é o poliacetato de vinila, conhecido também como PVA.',
+      respostas: [
         'PE',
         'PS',
         'PP',
         'PVA',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/orlon.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/orlon.png',
+      temExplicacao: true,
+      explicacao:
           'Esse é a poliacronitrila (PAN), conhecido também como orlon.',
-      'respostas': [
+      respostas: [
         'Orlon',
         'Teflon',
         'Sarau',
         'Acrílico',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/teflon.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/teflon.png',
+      temExplicacao: true,
+      explicacao:
           'Esse é o politetrafluoroetileno (PTFE), conhecido também como teflon.',
-      'respostas': [
+      respostas: [
         'Orlon',
         'Teflon',
         'Sarau',
         'Acrílico',
       ],
-      'correto': 1,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/PMMA.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 1,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/PMMA.png',
+      temExplicacao: true,
+      explicacao:
           'Esse é o polimetacrilato de metila (PMMA), conhecido também como acrílico.',
-      'respostas': [
+      respostas: [
         'Orlon',
         'Teflon',
         'Sarau',
         'Acrílico',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/poliisopreno.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/poliisopreno.png',
+      temExplicacao: true,
+      explicacao:
           'Esse é o poliisopreno, usado na fabricação de borracha natural.',
-      'respostas': [
+      respostas: [
         'Poliisobuteno',
         'Poliestireno',
         'Poliisopreno',
         'Polipropileno',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/PET.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/PET.png',
+      temExplicacao: true,
+      explicacao:
           'Esse é o politereftalato de etileno, conhecido também como PET.',
-      'respostas': [
+      respostas: [
         'PET',
         'PVA', // NAO FAZER
         'PVC',
         'PAN', // nao fazer
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/PVC.png',
-      'tem explicacao': true,
-      'explicacao':
-          'Esse é o policloreto de vinila, conhecido também como PVC.',
-      'respostas': [
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/PVC.png',
+      temExplicacao: true,
+      explicacao: 'Esse é o policloreto de vinila, conhecido também como PVC.',
+      respostas: [
         'PET',
         'PVA',
         'PVC',
         'PAN',
       ],
-      'correto': 2,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/polibutadieno.png',
-      'tem explicacao': true,
-      'explicacao': 'Esse é o polibutadieno, presente em borracha artificial.',
-      'respostas': [
+      correto: 2,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/polibutadieno.png',
+      temExplicacao: true,
+      explicacao: 'Esse é o polibutadieno, presente em borracha artificial.',
+      respostas: [
         'Poliestireno',
         'Poliisopropeno',
         'Polipropileno',
         'Polibutadieno',
       ],
-      'correto': 3,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/nylon.png',
-      'tem explicacao': true,
-      'explicacao': 'Esse é o nylon 46, uma poliamida.',
-      'respostas': [
+      correto: 3,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/nylon.png',
+      temExplicacao: true,
+      explicacao: 'Esse é o nylon 46, uma poliamida.',
+      respostas: [
         'Nylon',
         'PVC',
         'PE',
         'PET',
       ],
-      'correto': 0,
-    },
-    {
-      'pergunta': 'Qual é esse polímero?',
-      'tem imagem': true,
-      'path imagem': 'assets/images/polimeros/Policloropreno.png',
-      'tem explicacao': true,
-      'explicacao':
+      correto: 0,
+    ),
+    Pergunta(
+      pergunta: 'Qual é esse polímero?',
+      temImagem: true,
+      pathImagem: 'assets/images/polimeros/Policloropreno.png',
+      temExplicacao: true,
+      explicacao:
           'Esse é o policloropreno ou Neopreno, uma família de borrachas e látex sintéticos.',
-      'respostas': [
+      respostas: [
         'Poliestireno',
         'Policloropreno',
         'Polietileno',
         'Polibutadieno',
       ],
-      'correto': 1,
-    },
+      correto: 1,
+    ),
   ],
 );

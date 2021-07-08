@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import './botoes_resposta.dart';
 import './info_card.dart';
+import '../models/pergunta.dart';
 
 class Questao extends StatelessWidget {
-  final Map questao;
+  final Pergunta questao;
   final List selecionadas;
 
   final Function acertar;
@@ -63,13 +64,13 @@ class Questao extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          questao['pergunta'],
+                          questao.pergunta,
                           style: Theme.of(context).textTheme.bodyText2,
                         ),
                       ),
-                      if (questao['tem imagem'])
+                      if (questao.temImagem)
                         Image.asset(
-                          questao['path imagem'],
+                          questao.pathImagem,
                           //width: 50,
                           cacheWidth:
                               (MediaQuery.of(context).size.width * 0.8).toInt(),
@@ -91,12 +92,11 @@ class Questao extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 15),
                           child: Center(child: const Text('Errado!')),
                         ),
-                      if (questao['tem explicacao'])
+                      if (questao.temExplicacao)
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 15),
                           child: GestureDetector(
-                            onTap: () =>
-                                explicar(context, questao['explicacao']),
+                            onTap: () => explicar(context, questao.explicacao),
                             child: Image.asset(
                               'assets/images/botoes/QuimiquITA_info2.png',
                               scale: 1.4,
