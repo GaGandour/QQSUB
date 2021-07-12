@@ -39,24 +39,24 @@ class Questao extends StatelessWidget {
     Color corDaBorda = Color.fromRGBO(159, 91, 0, 1);
     Color corPreenchido = Color.fromRGBO(251, 255, 0, 1);
     Color corFundo = Colors.black;
+    double largura = MediaQuery.of(ctx).size.width - 28;
     return Stack(
       alignment: Alignment.center,
       children: [
         Container(
           height: 20,
-          width: MediaQuery.of(ctx).size.width - 20,
+          width: MediaQuery.of(ctx).size.width - 16,
           color: corDaBorda,
         ),
         Container(
           height: 10,
-          width: MediaQuery.of(ctx).size.width - 30,
+          width: largura,
           //color: corFundo,
           child: Row(
             children: [
               Container(
                 color: corPreenchido,
-                width:
-                    respondidas * (MediaQuery.of(ctx).size.width - 30) / total,
+                width: respondidas * largura / total,
               ),
               Expanded(
                 child: Container(color: corFundo),
@@ -93,8 +93,6 @@ class Questao extends StatelessWidget {
           Expanded(
             child: Column(
               children: [
-                SizedBox(height: 10),
-                barraDeProgresso(progresso, totalDeQuestoes, context),
                 SizedBox(height: 10),
                 Expanded(
                   child: ListView(
@@ -263,6 +261,7 @@ class Questao extends StatelessWidget {
                     ),
                   ],
                 ),
+                barraDeProgresso(progresso, totalDeQuestoes, context),
                 SizedBox(height: 15)
               ],
             ),
