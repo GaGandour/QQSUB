@@ -26,6 +26,7 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
+  int _total;
   final _pontuacaoMinima = 0.85;
   var _numero = 0;
   var _submetido = false;
@@ -48,6 +49,8 @@ class _QuizState extends State<Quiz> {
   @override
   void initState() {
     super.initState();
+
+    _total = widget.materia.listaQuestoes.length;
 
     _myBannerAd = BannerAd(
       size: AdSize.banner,
@@ -244,13 +247,14 @@ class _QuizState extends State<Quiz> {
                       acertar: _acertar,
                       proxima: _proxima,
                       acertando: _acertando,
-                      numero: widget.ordem[_numero],
+                      progresso: _numero,
                       submetido: _submetido,
                       errar: _errar,
                       tentarDeNovo: _tentarDeNovo,
                       menu: () => _pausar(context),
                       selecionar: _selecionar,
                       selecionadas: _selecionadas,
+                      totalDeQuestoes: _total,
                     );
                   } else {
                     if (_pontuacao / widget.materia.listaQuestoes.length <

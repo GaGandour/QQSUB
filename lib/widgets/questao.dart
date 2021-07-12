@@ -14,7 +14,9 @@ class Questao extends StatelessWidget {
   final Function menu;
   final Function selecionar;
 
-  final int numero;
+  final int progresso;
+  final int totalDeQuestoes;
+
   final bool submetido;
   final bool acertando;
 
@@ -22,7 +24,7 @@ class Questao extends StatelessWidget {
     @required this.questao,
     @required this.acertar,
     @required this.errar,
-    @required this.numero,
+    @required this.progresso,
     @required this.submetido,
     @required this.acertando,
     @required this.proxima,
@@ -30,7 +32,41 @@ class Questao extends StatelessWidget {
     @required this.menu,
     @required this.selecionar,
     @required this.selecionadas,
+    @required this.totalDeQuestoes,
   });
+
+  Widget barraDeProgresso(int respondidas, int total, BuildContext ctx) {
+    Color corDaBorda = Color.fromRGBO(159, 91, 0, 1);
+    Color corPreenchido = Color.fromRGBO(251, 255, 0, 1);
+    Color corFundo = Colors.black;
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        Container(
+          height: 20,
+          width: MediaQuery.of(ctx).size.width - 20,
+          color: corDaBorda,
+        ),
+        Container(
+          height: 10,
+          width: MediaQuery.of(ctx).size.width - 30,
+          //color: corFundo,
+          child: Row(
+            children: [
+              Container(
+                color: corPreenchido,
+                width:
+                    respondidas * (MediaQuery.of(ctx).size.width - 30) / total,
+              ),
+              Expanded(
+                child: Container(color: corFundo),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
 
   void explicar(BuildContext ctx, explicacao) {
     showModalBottomSheet(
@@ -57,6 +93,8 @@ class Questao extends StatelessWidget {
           Expanded(
             child: Column(
               children: [
+                SizedBox(height: 10),
+                barraDeProgresso(progresso, totalDeQuestoes, context),
                 SizedBox(height: 10),
                 Expanded(
                   child: ListView(
