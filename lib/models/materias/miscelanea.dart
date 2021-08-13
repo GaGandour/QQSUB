@@ -178,7 +178,7 @@ final miscelanea1 = Materia(
     ),
     Pergunta(
       pergunta:
-          'O que é, o que é? Esse polímero é uma forma alotrópica estável do fósforo e é usado nas caixinhas de fósforo para iniciar a combustão.',
+          'O que é, o que é? Esse polímero é uma forma alotrópica estável do fósforo e é usado nas caixinhas de fósforo para iniciar a combustão. É o fósforo...',
       temImagem: false,
       temExplicacao: false,
       respostas: [
