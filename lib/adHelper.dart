@@ -47,3 +47,6 @@ class AdHelperGabaritado {
     }
   }
 }
+
+
+// teste pra ver se o adhelper atualiza
