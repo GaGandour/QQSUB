@@ -45,3 +45,7 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 QQSUB/
+
+
+# AdKeys from google mobile ads
+/lib/adHelper.dart
